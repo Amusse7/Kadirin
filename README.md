@@ -139,19 +139,6 @@ kadirin/
 
 ## 🚢 Deployment
 
-### Railway
-
-```bash
-# Install Railway CLI
-npm i -g @railway/cli
-
-# Login
-railway login
-
-# Deploy
-railway up
-```
-
 ### Vercel
 
 ```bash
@@ -191,8 +178,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Project Link: [https://github.com/yourusername/kadirin](https://github.com/yourusername/kadirin)
+Project Link: [https://github.com/yourusername/kadirin](https://github.com/amusse7/kadirin)
 
 ---
 
-Made with ❤️ by Abdulkadir Musse
+Created by Abdulkadir Musse
