@@ -6,7 +6,6 @@ import {
   Heading,
   Text,
   VStack,
-  Icon,
 } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 
@@ -14,7 +13,7 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <Box minH="100vh" display="flex" alignItems="center" bg="gray.50">
+    <Box flex="1" display="flex" alignItems="center" bg="gray.50">
       <Container maxW="container.md">
         <VStack spacing={8} align="center" textAlign="center">
           <Box>
@@ -85,7 +84,7 @@ export default function Home() {
                 </VStack>
                 <VStack spacing={2}>
                   <Text fontSize="2xl" fontWeight="bold" color="blue.600">
-                    📚
+                    ��
                   </Text>
                   <Text fontSize="sm" fontWeight="medium">
                     Learning Resources

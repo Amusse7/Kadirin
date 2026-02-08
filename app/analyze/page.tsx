@@ -7,6 +7,7 @@ import {
   Button,
   useToast,
   Divider,
+  Box,
 } from '@chakra-ui/react'
 import { useState } from 'react'
 import ResumeUpload from '@/components/ResumeUpload'
@@ -70,34 +71,36 @@ export default function AnalyzePage() {
   }
 
   return (
-    <Container maxW="container.lg" py={10}>
-      <VStack spacing={8} align="stretch">
-        <Heading>Skill Gap Analysis</Heading>
+    <Box flex="1" bg="gray.50" py={10}>
+      <Container maxW="container.lg">
+        <VStack spacing={8} align="stretch">
+          <Heading>Skill Gap Analysis</Heading>
 
-        <VStack spacing={6} align="stretch">
-          <ResumeUpload onFileSelect={setResumeFile} />
-          <JobInput value={jobDescription} onChange={setJobDescription} />
+          <VStack spacing={6} align="stretch">
+            <ResumeUpload onFileSelect={setResumeFile} />
+            <JobInput value={jobDescription} onChange={setJobDescription} />
 
-          <Button
-            colorScheme="blue"
-            size="lg"
-            onClick={handleAnalyze}
-            isLoading={isLoading}
-            loadingText="Analyzing..."
-          >
-            Analyze Skill Gaps
-          </Button>
+            <Button
+              colorScheme="blue"
+              size="lg"
+              onClick={handleAnalyze}
+              isLoading={isLoading}
+              loadingText="Analyzing..."
+            >
+              Analyze Skill Gaps
+            </Button>
+          </VStack>
+
+          {results && (
+            <>
+              <Divider />
+              <SkillGapResults results={results} />
+              <Divider />
+              <LearningRoadmap results={results} />
+            </>
+          )}
         </VStack>
-
-        {results && (
-          <>
-            <Divider />
-            <SkillGapResults results={results} />
-            <Divider />
-            <LearningRoadmap results={results} />
-          </>
-        )}
-      </VStack>
-    </Container>
+      </Container>
+    </Box>
   )
 }
