@@ -15,17 +15,25 @@ Transform your career transition with AI-powered skill gap analysis. Upload your
 
 ## 📸 Screenshots
 
+### Home Page
+
+![Home Page](screenshots/Home.png)
+
 ### Analysis Interface
-![Analysis Page](screenshots/analyze.png)
+
+![Analysis Page](screenshots/Analyze.png)
 
 ### Skill Gap Results
-![Results](screenshots/results.png)
+
+![Results](screenshots/Results.png)
 
 ### Learning Roadmap
-![Roadmap](screenshots/roadmap.png)
+
+![Roadmap](screenshots/Roadmap.png)
 
 ### Learning Resources
-![Resources](screenshots/resources.png)
+
+![Resources](screenshots/Resources.png)
 
 ## 🛠️ Tech Stack
 
@@ -43,6 +51,7 @@ Transform your career transition with AI-powered skill gap analysis. Upload your
 - Anthropic API Key
 
 ### Local Development
+
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/kadirin.git
@@ -62,6 +71,7 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000)
 
 ### Docker Deployment
+
 ```bash
 # Build the image
 docker build -t kadirin:latest .
@@ -82,11 +92,13 @@ docker compose down
 2. Sign up for a free account ($5 credit included)
 3. Create an API key
 4. Add to `.env.local`:
+
 ```
    ANTHROPIC_API_KEY=sk-ant-your-key-here
 ```
 
 ## 📁 Project Structure
+
 ```
 kadirin/
 ├── app/
@@ -128,6 +140,7 @@ kadirin/
 ## 🚢 Deployment
 
 ### Railway
+
 ```bash
 # Install Railway CLI
 npm i -g @railway/cli
@@ -140,6 +153,7 @@ railway up
 ```
 
 ### Vercel
+
 ```bash
 # Install Vercel CLI
 npm i -g vercel
@@ -149,6 +163,7 @@ vercel
 ```
 
 ### DigitalOcean
+
 - Use App Platform
 - Connect GitHub repo
 - Add `ANTHROPIC_API_KEY` environment variable
@@ -176,10 +191,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
-
 Project Link: [https://github.com/yourusername/kadirin](https://github.com/yourusername/kadirin)
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Abdulkadir Musse
